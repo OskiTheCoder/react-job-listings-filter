@@ -1,0 +1,57 @@
+.job-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding: 25px 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px -7px rgb(93 164 164 / 50%);
+  border-left: 6px solid hsl(180, 29%, 50%);
+  width: 85%;
+}
+
+.job-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.company-name {
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: 700;
+}
+
+.dot {
+  font-size: 20px;
+  margin: 0 3px;
+}
+
+.date-posted,
+.dot,
+.job-type,
+.job-location {
+  font-weight: 500;
+  opacity: 0.45;
+}
+
+.skill {
+  margin: 0 7px;
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  padding: 12px 14px;
+  font-weight: 700;
+}

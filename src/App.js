@@ -9,7 +9,7 @@ function App() {
   return (
     <main>
       <Header />
-      <Job />
+      <JobList jobs={visibleJobs} />
     </main>
   );
 }
