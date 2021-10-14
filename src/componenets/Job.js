@@ -9,7 +9,11 @@ const Job = (props) => {
   return (
     <div className='job-container'>
       <div className='company-logo'>
-        <img className='logo' src={`images/${props.logo}`} alt='logo' />
+        <img
+          className='logo'
+          src={require(`../images/${props.logo}`).default}
+          alt='logo'
+        />
       </div>
       <div className='job-heading'>
         <div className='job-description'>

@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <img
         className='bg-desktop'
-        src={'images/bg-header-desktop.svg'}
+        src={require(`../images/bg-header-desktop.svg`).default}
         alt='background'
       />
     </header>
