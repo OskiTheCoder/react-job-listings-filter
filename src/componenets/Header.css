@@ -1,5 +1,7 @@
 header {
   background-color: hsl(180, 29%, 50%);
+  position: relative;
+  z-index: 1;
 }
 
 .bg-desktop {

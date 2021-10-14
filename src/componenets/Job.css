@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1;
 }
 
 .job-description {
@@ -27,6 +28,23 @@
 .company-name {
   color: hsl(180, 29%, 50%);
   font-weight: 700;
+}
+
+.new {
+  margin: 0 5px 0px 8px;
+  background-color: hsl(180, 29%, 50%);
+}
+
+.featured {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.new,
+.featured {
+  color: white;
+  border-radius: 14px;
+  font-size: 10px;
+  padding: 6px 10px;
 }
 
 h1 {
@@ -48,10 +66,116 @@ h1 {
   opacity: 0.45;
 }
 
-.skill {
+.role,
+.level,
+.language,
+.tool {
   margin: 0 7px;
   background-color: hsl(180, 31%, 95%);
   color: hsl(180, 29%, 50%);
   padding: 12px 14px;
   font-weight: 700;
+}
+
+.role:hover,
+.level:hover,
+.language:hover,
+.tool:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .job-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .job-container {
+    width: 95%;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .job-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    padding: 30px 10px;
+  }
+
+  .job-heading {
+    margin: 12px 0 30px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid hsl(180, 8%, 52%);
+    width: 100%;
+    flex: none;
+  }
+
+  .job-description {
+    margin: 0px;
+  }
+
+  .company-logo {
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: -55px;
+    left: 12px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .heading-info {
+    margin: 5px 0;
+  }
+
+  .company-name {
+    font-size: 14px;
+  }
+
+  .new,
+  .featured {
+    color: white;
+    border-radius: 12px;
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  h1 {
+    font-size: 17px;
+    margin: 15px 0px;
+    font-weight: 700;
+  }
+
+  .date-posted,
+  .job-type,
+  .job-location {
+    font-size: 13px;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .role,
+  .level,
+  .language,
+  .tool {
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .job-container {
+    width: 95%;
+    padding: 25px;
+  }
 }

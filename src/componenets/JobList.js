@@ -20,6 +20,7 @@ const JobList = (props) => {
           location={job.location}
           languages={job.languages}
           tools={job.tools}
+          handleFilter={props.handleFilter}
         />
       ))}
     </>
