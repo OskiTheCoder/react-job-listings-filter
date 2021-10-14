@@ -177,5 +177,6 @@ h1 {
   .job-container {
     width: 95%;
     padding: 25px;
+    margin-top: 65px;
   }
 }
